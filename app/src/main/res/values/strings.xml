@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Shoppingcart</string>
+    <string name="rightaddress">The right address\\n\nfor online shopping</string>
+    <string name="rightaddresss">The right address\nfor online shopping \nanyday</string>
+    <string name="rightaddres">"The right address \nfor online shopping "</string>
+    <string name="rightaddressss">The Right Address\nFor Shopping Anyday</string>
+    <string name="rightaddre">The Right Address\nFor Shopping\nAnyday</string>
+    <string name="quality">it is now very easy to reach\nthe best among the internets</string>
+    <string name="right">Login Now\n</string>
+    <string name="qualit">Dont have a account?Register now</string>
+    <string name="quali">"Don't have a account?\n  Register Now "</string>
+    <string name="quai">Forgot Password</string>
+    <string name="ri">Register Now</string>
+    <string name="qua">Do you have a account?\nLogin now</string>
+</resources>

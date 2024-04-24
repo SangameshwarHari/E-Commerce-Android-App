@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_register_graph"
+    app:startDestination="@id/introductionFragments">
+
+    <fragment
+        android:id="@+id/introductionFragments"
+        android:name="com.example.shoppingcart.fragments.loreg.IntroductionFragments"
+        android:label="IntroductionFragments"
+        tools:layout="@layout/fragment_introduction">
+        <action
+            android:id="@+id/action_introductionFragments_to_accountoptionsFragments"
+            app:destination="@id/accountoptionsFragments"
+            app:enterAnim="@anim/from_bottom" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragments"
+        android:name="com.example.shoppingcart.fragments.loreg.LoginFragments"
+        android:label="LoginFragments"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragments_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/from_right"
+            app:popUpTo="@id/accountoptionsFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.shoppingcart.fragments.loreg.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragments"
+            app:destination="@id/loginFragments"
+            app:enterAnim="@anim/from_left"
+            app:popUpTo="@id/accountoptionsFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountoptionsFragments"
+        android:name="com.example.shoppingcart.fragments.loreg.AccountoptionsFragments"
+        android:label="AccountoptionsFragments"
+        tools:layout="@layout/fragment_account">
+
+        <action
+            android:id="@+id/action_accountoptionsFragments_to_loginFragments2"
+            app:destination="@id/loginFragments"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_accountoptionsFragments_to_registerFragment2"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+    </fragment>
+</navigation>
